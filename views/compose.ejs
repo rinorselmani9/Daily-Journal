@@ -1,0 +1,19 @@
+<%- include("partials/header") -%>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<h1>Compose</h1>
+<form action="/compose" method="post">
+
+<div class="form-group">
+    <label for="">Title</label>
+    <input type="text" name="postTitle" class="form-control">
+</div>
+<div class="form-group">
+    <label for="">Post</label>
+    <textarea name="postBody"  cols="150" rows="10" class="form-control"></textarea>
+</div>     
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+</form>
+
+
+<%- include("partials/footer") -%>  
